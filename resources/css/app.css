@@ -14,7 +14,7 @@
 }
 body{
     background-color: #fffbe9;
-    
+    font-family: 'Outfit-Regular';
 }
 
 .bgimg {
@@ -51,4 +51,56 @@ header img{
     src: url('public/fonts/Maragsa-Display.woff2') format('woff2'),
          url('public/fonts/Maragsa-Display.woff') format('woff');
     font-weight: normal;
+}
+@font-face {
+    font-family: 'Outfit-Regular';
+    src: url('public/fonts/Outfit-Regular.woff2') format('woff2'),
+         url('public/fonts/Outfit-Regular.woff') format('woff'),
+         url('public/fonts/Outfit-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+    color: #033473;
+    font-weight: 1000;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+    animation-delay: 1s;
+}
+.wave-text span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.wave-text span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+        font-weight: 100;
+    }
+    50% {
+        transform: translateY(-20px);
+        font-weight: 1000;
+    }
 }

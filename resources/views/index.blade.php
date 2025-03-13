@@ -11,7 +11,7 @@
 <body class="min-h-screen flex flex-col">
     <!-- Header -->
     <header >
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="mx-8  py-4 flex justify-between ">
             <div class="text-3xl font-bold flex flex-row" style="color:#033473; font-family:'Maragsa'"> <img src="{{asset('images/logo.svg')}}" alt="Logo demi masa"><h3>Demi<br>Masa</h3></div>
             <button id="loginBtn" class="  px-8 py-1 rounded-full transition">Log Masuk</button>
         </div>
@@ -20,7 +20,16 @@
     <!-- Hero Section -->
     <section class="container mr-auto px-4 py-16">
         <div class="max-w-3xl mx-auto text-left">
-            <h1 class="text-7xl font-bold mb-6">Paparan Info Solat Malaysia yang Menarik !</h1>
+            <h1 class="text-7xl mb-6">Paparan Info Solat Malaysia yang <div class="wave-text">
+            <span>M</span>
+            <span>e</span>
+            <span>n</span>
+            <span>a</span>
+            <span>r</span>
+            <span>i</span>
+            <span>k</span>
+            &nbsp;<span>!</span>
+            </div></h1>
             
             
                 <button id="registerBtn" class=" px-6 py-3 rounded-lg text-lg">Daftar Sekarang!</button>
